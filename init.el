@@ -88,6 +88,9 @@
 ;; === misc ===
 (load-file "~/.emacs.d/config/init-70-misc-ledger.el")
 
+;; === find-file ===
+(find-file "~/Dropbox/Orgzly/projects.org")
+
 ;;; init.el ends here
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
