@@ -13,7 +13,7 @@
 (setq org-cycle-separator-lines 0)
 (setq org-tags-column 80)
 (setq org-agenda-tags-column org-tags-column)
-(setq org-agenda-sticky t)
+(setq org-agenda-sticky 0)
 
 ;; Set default column view headings: Task Effort Clock_Summary
 (setq org-columns-default-format "%50ITEM(Task) %10Effort(Effort){:} %10CLOCKSUM %16TIMESTAMP_IA")
@@ -58,12 +58,11 @@ Callers of this function already widen the buffer view."
 ;; == Tags ==
 (setq org-tag-alist '((:startgroup)
 		      ("@errand" . ?e)
-		      ("@campus" . ?c)
+		      ("@work" . ?w)
 		      ("@home" . ?h)
 		      (:endgroup)
-		      ("WAITING" . ?w)
+		      ("WAITING" . ?W)
 		      ("PERSONAL" . ?P)
-		      ("RRG" . ?W)
 		      ("NOTE" . ?n)
 		      ))
 
