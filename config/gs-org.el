@@ -115,7 +115,7 @@ Callers of this function already widen the buffer view."
 ;; Define the custum capture templates
 (defvar org-capture-templates
        '(("t" "todo" entry (file org-default-notes-file)
-	  "* TODO %?\n%u\n%a\n" :clock-in t :clock-resume t)
+	  "* TODO %?\n%u\n" :clock-in t :clock-resume t)
 	 ("b" "Blank" entry (file org-default-notes-file)
 	  "* %?\n%u")
 	 ("m" "Meeting" entry (file org-default-notes-file)
