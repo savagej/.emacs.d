@@ -6,6 +6,7 @@
 (setq org-directory "~/Dropbox/Orgzly")
 (setq org-default-notes-file "~/Dropbox/Orgzly/refile.org")
 (defvar org-default-diary-file "~/Dropbox/Orgzly/diary.org")
+(defvar org-default-bugs-file "~/Dropbox/Orgzly/bugs.org")
 (setq org-default-daily-log-file "~/Dropbox/Orgzly/daily-log.org")
 (setq org-agenda-files (quote ("~/Dropbox/Orgzly/")))
 
@@ -118,6 +119,8 @@ Callers of this function already widen the buffer view."
 	  "* TODO %?\n%u\n" :clock-in t :clock-resume t)
 	 ("b" "Blank" entry (file org-default-notes-file)
 	  "* %?\n%u")
+	 ("B" "Bugs" entry (file org-default-bugs-file)
+	  "* %u %?\n*Symptom*: \n\n*Cause*: \n\n*How Found*: \n\n*Fix*: \n\n*Fixed in file(s)*: \n\n*Caused by me*: \nYes/No \n*Time taken to resolve* \n\n*Lessons*: " )
 	 ("m" "Meeting" entry (file org-default-notes-file)
 	  "* MEETING with %? :MEETING:\n%t" :clock-in t :clock-resume t)
 	 ("d" "Diary" entry (file+datetree org-default-diary-file)
