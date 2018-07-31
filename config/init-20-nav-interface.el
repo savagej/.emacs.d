@@ -57,6 +57,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   :ensure t
   :after evil
   :init
+  (general-def :states '(normal motion emacs) "SPC" nil)
   (defvar gjs-leader-key "<SPC>")
 
   (defun gjstein-org-agenda ()

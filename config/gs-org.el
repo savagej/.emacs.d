@@ -15,6 +15,9 @@
 (setq org-tags-column 80)
 (setq org-agenda-tags-column org-tags-column)
 (setq org-agenda-sticky 0)
+(setq org-agenda-span 13)
+(setq org-agenda-start-on-weekday 1)
+(setq org-agenda-start-day "-4d")
 
 ;; Set default column view headings: Task Effort Clock_Summary
 (setq org-columns-default-format "%50ITEM(Task) %10Effort(Effort){:} %10CLOCKSUM %16TIMESTAMP_IA")
