@@ -89,7 +89,7 @@
 (load-file "~/.emacs.d/config/init-70-misc-ledger.el")
 
 ;; === find-file ===
-(find-file "F:/Dropbox/Orgzly/projects.org")
+(find-file "~/Dropbox/Orgzly/projects.org")
 
 ;;; init.el ends here
 (custom-set-variables
@@ -103,7 +103,7 @@
  '(flycheck-google-cpplint-verbose "3")
  '(org-agenda-files
    (quote
-    ("F:/Dropbox/Orgzly/ms.org" "F:/Dropbox/Orgzly/refile.org" "F:/Dropbox/Orgzly/bugs.org" "F:/Dropbox/Orgzly/crypto.org" "F:/Dropbox/Orgzly/daily-log.org" "F:/Dropbox/Orgzly/diary.org" "F:/Dropbox/Orgzly/home-misc.org" "F:/Dropbox/Orgzly/home-projects.org" "F:/Dropbox/Orgzly/meta.org" "F:/Dropbox/Orgzly/projects.org")))
+    ("~/Dropbox/Orgzly/ms.org" "~/Dropbox/Orgzly/refile.org" "~/Dropbox/Orgzly/bugs.org" "~/Dropbox/Orgzly/crypto.org" "~/Dropbox/Orgzly/daily-log.org" "~/Dropbox/Orgzly/diary.org" "~/Dropbox/Orgzly/home-misc.org" "~/Dropbox/Orgzly/home-projects.org" "~/Dropbox/Orgzly/meta.org" "~/Dropbox/Orgzly/projects.org")))
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
