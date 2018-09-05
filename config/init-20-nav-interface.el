@@ -68,6 +68,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
     "Open my custom agenda"
     (interactive)
     (org-agenda 0 "a"))
+  (defun gjstein-org-tenday-agenda ()
+    "Open my custom agenda"
+    (interactive)
+    (org-agenda 0 "X"))
 
   (defun gjstein-open-ledger ()
     "Open my ledger file"
@@ -84,6 +88,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
    ;; I want these everywhere
    "a" '(gjstein-org-agenda :which-key "agenda")
    "A" '(gjstein-org-weekly-agenda :which-key "weekly agenda")
+   "x" '(gjstein-org-tenday-agenda :which-key "tenday agenda")
    "g" '(magit-status :which-key "git")
    ;; org-mode keys
    ;;"c" '(:ignore t :which-key "Org Keys")
