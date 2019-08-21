@@ -40,25 +40,6 @@
 ;;		(load-theme 'monokai))))
   )
 
-;; Solarized
-(use-package color-theme :ensure t)
-(use-package color-theme-solarized
-  :ensure t
-  :init
-  (set-frame-parameter nil 'background-mode 'dark)
-  ; (load-theme 'solarized t)
-  (defun gjstein-swap-theme-light-dark ()
-    "Swaps between solarized light and dark"
-    (interactive)
-    (load-theme 'solarized)
-    (if (eq 'light (frame-parameter nil 'background-mode))
-	(set-frame-parameter nil 'background-mode 'dark)
-      (set-frame-parameter nil 'background-mode 'light)
-      )
-    (enable-theme 'solarized)
-    )
-  )
-
 ;; I prefer using a smaller font size than the default (and 'Monaco')
 (if (eq system-type 'darwin)
     (custom-set-faces '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "nil" :family "Iosevka Light")))))
