@@ -32,14 +32,16 @@
 ;;; Code:
 
 ;; User Info
-(setq user-full-name "Gregory Stein")
-(setq user-mail-address "gregory.j.stein@gmail.com")
+(setq user-full-name "John Savage")
+(setq user-mail-address "john@johnsavage.net")
 
 ;; Install use-package if necessary
 (require 'package)
 (setq package-enable-at-startup nil)
 (setq package-archives (append package-archives
-			 '(("melpa" . "http://melpa.org/packages/")
+			       '(
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")
+			 ("melpa" . "http://melpa.org/packages/")
 			 ;;("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("gnu" . "http://elpa.gnu.org/packages/")
 			 ;; ("org" . "http://orgmode.org/elpa/")
@@ -77,16 +79,18 @@
 (load-file "~/.emacs.d/config/init-31-doc-org.el")
 
 ;; === Programming & Coding Functions ===
-(load-file "~/.emacs.d/config/init-40-coding-gen.el")
-(load-file "~/.emacs.d/config/init-41-coding-c-cpp.el")
-(load-file "~/.emacs.d/config/init-42-coding-web.el")
-(load-file "~/.emacs.d/config/init-43-coding-matlab.el")
-(load-file "~/.emacs.d/config/init-44-coding-python.el")
-(load-file "~/.emacs.d/config/init-45-coding-ROS.el")
-(load-file "~/.emacs.d/config/init-46-coding-rust.el")
+;; (load-file "~/.emacs.d/config/init-40-coding-gen.el")
+;; (load-file "~/.emacs.d/config/init-41-coding-c-cpp.el")
+;; (load-file "~/.emacs.d/config/init-42-coding-web.el")
+;; (load-file "~/.emacs.d/config/init-43-coding-matlab.el")
+;; (load-file "~/.emacs.d/config/init-44-coding-python.el")
+;; (load-file "~/.emacs.d/config/init-45-coding-ROS.el")
+;; (load-file "~/.emacs.d/config/init-46-coding-rust.el")
 
 ;; === misc ===
-(load-file "~/.emacs.d/config/init-70-misc-ledger.el")
+;; (load-file "~/.emacs.d/config/init-70-misc-ledger.el")
+(load-file "~/.emacs.d/config/init-80-notes.el")
+(load-file "~/.emacs.d/config/init-81-journal.el")
 
 ;; === find-file ===
 (find-file "~/Dropbox/Orgzly/projects.org")
@@ -97,22 +101,24 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(flycheck-c/c++-clang-executable "clang-3.5")
  '(flycheck-c/c++-googlelint-executable "~/.emacs.d/scripts/cpplint.py")
  '(flycheck-google-cpplint-filter "-whitespace,+whitespace/braces")
  '(flycheck-google-cpplint-linelength "120")
  '(flycheck-google-cpplint-verbose "3")
  '(org-agenda-files
    (quote
-    ("~/Dropbox/Orgzly/ms.org" "~/Dropbox/Orgzly/refile.org" "~/Dropbox/Orgzly/bugs.org" "~/Dropbox/Orgzly/crypto.org" "~/Dropbox/Orgzly/daily-log.org" "~/Dropbox/Orgzly/diary.org" "~/Dropbox/Orgzly/home-misc.org" "~/Dropbox/Orgzly/home-projects.org" "~/Dropbox/Orgzly/meta.org" "~/Dropbox/Orgzly/projects.org")))
+    ("~/Dropbox/Orgzly/ms.org" "~/Dropbox/Orgzly/refile.org" "~/Dropbox/Orgzly/bugs.org" "~/Dropbox/Orgzly/crypto.org" "~/Dropbox/Orgzly/daily-log.org" "~/Dropbox/Orgzly/diary.org" "~/Dropbox/Orgzly/home-misc.org" "~/Dropbox/Orgzly/home-projects.org" "~/Dropbox/Orgzly/meta.org" "~/Dropbox/Orgzly/projects.org" "~/Dropbox/Orgzly/notes/")))
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa-stable" . "http://stable.melpa.org/packages/")
      ("melpa" . "http://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/")
      ("elpy" . "http://jorgenschaefer.github.io/packages/"))))
  '(package-selected-packages
    (quote
-    (helm-ispell company-irony yaml-mode ws-butler which-key web-mode use-package swiper-helm swift-mode spaceline rust-mode monokai-theme matlab-mode markdown-mode magit ledger-mode irony helm-projectile helm-navi helm-bind-key helm-ag haskell-mode google-c-style general flycheck-rust exec-path-from-shell evil-vimish-fold evil-surround evil-snipe emmet-mode elpy diminish color-theme-solarized cmake-mode auctex ag))))
+    (helm-ispell company-irony yaml-mode ws-butler which-key web-mode use-package swiper-helm swift-mode spaceline rust-mode monokai-theme matlab-mode markdown-mode magit ledger-mode irony helm-projectile helm-navi helm-bind-key helm-ag haskell-mode google-c-style general flycheck-rust exec-path-from-shell evil-vimish-fold evil-surround evil-snipe emmet-mode elpy diminish color-theme-solarized cmake-mode auctex ag deft org-journal))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
