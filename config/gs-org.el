@@ -188,8 +188,8 @@ Switch projects and subprojects from NEXT back to TODO"
 ;; Set the times to display in the time grid
 (setq org-agenda-time-grid
   '((daily today require-timed)
-    "----------------"
-    (800 1200 1600 2000)))
+ (800 1200 1600 2000)
+ "......" "----------------"))
 
 ;; Some helper functions for selection within agenda views
 (defun gs/select-with-tag-function (select-fun-p)
