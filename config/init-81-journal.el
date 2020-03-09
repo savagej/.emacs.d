@@ -11,5 +11,5 @@
   :custom
   (org-journal-dir "~/Dropbox/Orgzly/journal/")
   ;(org-journal-date-format "%A, %d %B %Y")
+  (org-journal-file-format "%Y%m%d.org")
   )
-;(global-set-key (kbd "C-x j") 'org-journal-new-entry)
