@@ -108,7 +108,7 @@
  '(flycheck-google-cpplint-verbose "3")
  '(org-agenda-files
    (quote
-    ("~/Dropbox/Orgzly/ms.org" "~/Dropbox/Orgzly/refile.org" "~/Dropbox/Orgzly/bugs.org" "~/Dropbox/Orgzly/crypto.org" "~/Dropbox/Orgzly/daily-log.org" "~/Dropbox/Orgzly/diary.org" "~/Dropbox/Orgzly/home-misc.org" "~/Dropbox/Orgzly/home-projects.org" "~/Dropbox/Orgzly/meta.org" "~/Dropbox/Orgzly/projects.org" "~/Dropbox/Orgzly/notes/" "~/Dropbox/Orgzly/journal/")))
+    ("~/Dropbox/Orgzly/ms.org" "~/Dropbox/Orgzly/refile.org" "~/Dropbox/Orgzly/bugs.org" "~/Dropbox/Orgzly/crypto.org" "~/Dropbox/Orgzly/daily-log.org" "~/Dropbox/Orgzly/diary.org" "~/Dropbox/Orgzly/home-misc.org" "~/Dropbox/Orgzly/meta.org" "~/Dropbox/Orgzly/projects.org" "~/Dropbox/Orgzly/notes/" "~/Dropbox/Orgzly/journal/")))
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
