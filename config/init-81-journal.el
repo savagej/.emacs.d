@@ -3,7 +3,7 @@
 ;;; Author: John Savage
 ;;; Created 23 Feb 2020
 
-(require 'org-journal)
+; (require 'org-journal)
 (use-package org-journal
   :bind ("C-c j" . org-journal-new-entry)
   :ensure t

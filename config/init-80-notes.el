@@ -3,7 +3,7 @@
 ;;; Author: John Savage
 ;;; Created 22 Feb 2020
 
-(require 'deft)
+; (require 'deft)
 (use-package deft
   :bind ("C-c d" . deft)
   :commands (deft)
