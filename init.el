@@ -55,8 +55,9 @@
 
 ;; Enable use-package
 (eval-when-compile
-  (require 'use-package))
-(require 'diminish)                ;; if you use :diminish
+  (require 'use-package)
+  (setq use-package-always-ensure t))
+(use-package diminish)                ;; if you use :diminish
 (require 'bind-key)                ;; if you use any :bind variant
 
 ;; Increase garbage collection threshold to 500 MB to ease startup
@@ -91,6 +92,7 @@
 ;; (load-file "~/.emacs.d/config/init-70-misc-ledger.el")
 (load-file "~/.emacs.d/config/init-80-notes.el")
 (load-file "~/.emacs.d/config/init-81-journal.el")
+(load-file "~/.emacs.d/config/init-82-roam.el")
 
 ;; === find-file ===
 (find-file "~/Dropbox/Orgzly/projects.org")
@@ -118,7 +120,7 @@
      ("elpy" . "http://jorgenschaefer.github.io/packages/"))))
  '(package-selected-packages
    (quote
-    (helm-ispell company-irony yaml-mode ws-butler which-key web-mode use-package swiper-helm swift-mode spaceline rust-mode monokai-theme matlab-mode markdown-mode magit ledger-mode irony helm-projectile helm-navi helm-bind-key helm-ag haskell-mode google-c-style general flycheck-rust exec-path-from-shell evil-vimish-fold evil-surround evil-snipe emmet-mode elpy diminish color-theme-solarized cmake-mode auctex ag deft org-journal))))
+    (org-roam which-key use-package swiper-helm spaceline org-journal monokai-theme markdown-mode general evil-surround evil-snipe diminish deft auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
