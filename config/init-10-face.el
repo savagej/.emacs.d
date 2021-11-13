@@ -27,11 +27,11 @@
 (use-package monokai-theme
   :ensure t
   :config
-  (setq monokai-height-minus-1 1.0
-	monokai-height-plus-1 1.0
-	monokai-height-plus-2 1.0
-	monokai-height-plus-3 1.0
-	monokai-height-plus-4 1.0)
+  (setq monokai-height-minus-1 1.2
+	monokai-height-plus-1 1.2
+	monokai-height-plus-2 1.2
+	monokai-height-plus-3 1.2
+	monokai-height-plus-4 1.2)
   (load-theme 'monokai t)
 ;;  (add-hook 'after-make-frame-functions
 ;;	    (lambda (frame)
@@ -39,11 +39,6 @@
 ;;		  nil
 ;;		(load-theme 'monokai))))
   )
-
-;; I prefer using a smaller font size than the default (and 'Monaco')
-(if (eq system-type 'darwin)
-    (custom-set-faces '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "nil" :family "Iosevka Light")))))
-  (custom-set-faces '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 110 :width normal :foundry "nil" :family "Ubuntu Mono"))))))
 
 ;; Set default fill column
 (setq-default fill-column 80)
